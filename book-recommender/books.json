@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "subjects": ["Self-help", "Productivity", "Habits", "Mindset"],
+    "reading_time_minutes": 352
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "subjects": ["Productivity", "Focus", "Self-help"],
+    "reading_time_minutes": 330
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "subjects": ["Fiction", "Adventure", "Philosophy"],
+    "reading_time_minutes": 220
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "subjects": ["Psychology", "Thinking", "Self-help"],
+    "reading_time_minutes": 480
+  },
+  {
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "subjects": ["Habits", "Psychology", "Self-help"],
+    "reading_time_minutes": 410
+  },
+  {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "subjects": ["Finance", "Money", "Mindset"],
+    "reading_time_minutes": 300
+  },
+  {
+    "title": "Ikigai",
+    "author": "Hector Garcia",
+    "subjects": ["Mindset", "Self-help", "Philosophy"],
+    "reading_time_minutes": 280
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "subjects": ["History", "Psychology", "Thinking"],
+    "reading_time_minutes": 500
+  },
+  {
+    "title": "The Subtle Art of Not Giving a Fck",
+    "author": "Mark Manson",
+    "subjects": ["Self-help", "Mindset", "Psychology"],
+    "reading_time_minutes": 300
+  },
+  {
+    "title": "Harry Potter and the Sorcerers Stone",
+    "author": "J.K. Rowling",
+    "subjects": ["Fiction", "Fantasy", "Adventure"],
+    "reading_time_minutes": 320
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "subjects": ["Fantasy", "Adventure", "Fiction"],
+    "reading_time_minutes": 310
+  }
+]
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookNest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 BookNest</h1>
+    <p class="subtitle">Find books that match your mood and time ✨</p>
+
+    <div class="card">
+        <input type="text" id="interest" placeholder="Enter genre (e.g., fiction, self-help)">
+        <input type="number" id="time" placeholder="Time available (minutes)">
+        <button onclick="getRecommendations()">Find Books</button>
+    </div>
+
+    <div id="result" class="results"></div>
+</div>
+
+<script>
+async function getRecommendations() {
+    const interest = document.getElementById("interest").value;
+    const time = document.getElementById("time").value;
+
+    const response = await fetch("/recommend", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ interest, time })
+    });
+
+    const data = await response.json();
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "";
+
+    if (data.error) {
+        resultDiv.innerHTML = `<p class="error">${data.error}</p>`;
+        return;
+    }
+
+    if (data.message) {
+        resultDiv.innerHTML = `<p class="message">${data.message}</p>`;
+        return;
+    }
+
+    data.forEach(book => {
+        resultDiv.innerHTML += `
+            <div class="book-card">
+                <h3>${book.title}</h3>
+                <p>Author: ${book.author}</p>
+                <p>Reading Time: ${book.reading_time_minutes} minutes</p>
+            </div>
+        `;
+    });
+}
+</script>
+
+</body>
+</html>
